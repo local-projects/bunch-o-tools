@@ -8,8 +8,7 @@
 
 //create a new BOTIndeterminateAlertView
 - (id) initWithTitle:(NSString *)title
-             message:(NSString *)message
-            delegate:(id)delegate;
+             message:(NSString *)message;
 
 //show this BOTIndeterminateAlertView
 - (void) show;

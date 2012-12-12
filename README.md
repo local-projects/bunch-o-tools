@@ -14,20 +14,31 @@ This framework requires ARC.
 
 Use this AlertView to lock the screen while your app is doing work that the user has to wait for. You will have to keep a reference to the current AlertView to be able to dismiss it after your app has done the work.
 
+``` objective-c
+//init and show
+BOTIndeterminateAlertView *alertView = [[BOTIndeterminateAlertView alloc] initWithTitle:@"Title" message:@"Please stand by!"];
+[alertView show];
+    
+//some time later
+[alertView dismiss];
+```
+
 ###BOTBlockAlertView
 
 Use this AlertView to route the result of the tapped button into a block rather than having to set up a delegate.
 
 ``` objective-c
-    BOTBlockAlertView *alertView = [[BOTBlockAlertView alloc]
-                                    initWithTitle:@"Title"
-                                    message:@"Message"
-                                    cancelButtonTitle:@"Cancel"
-                                    otherButtonTitles:@"Other", nil];
-    
-    [alertView showWithResultBlock:^(int buttonIndex) {
-        NSLog(@"%i", buttonIndex);
-    }];
+//init
+BOTBlockAlertView *alertView = [[BOTBlockAlertView alloc]
+                                initWithTitle:@"Title"
+                                message:@"Message"
+                                cancelButtonTitle:@"Cancel"
+                                otherButtonTitles:@"Other", nil];
+
+//show and set results block
+[alertView showWithResultBlock:^(int buttonIndex) {
+    NSLog(@"%i", buttonIndex);
+}];
 ```
 
 ##Collaboration

@@ -8,11 +8,10 @@
 
 - (id) initWithTitle:(NSString *)title
              message:(NSString *)message
-            delegate:(id)delegate
 {
     self = [super initWithTitle:title
                         message:message
-                       delegate:delegate
+                       delegate:nil
               cancelButtonTitle:nil
               otherButtonTitles:nil];
     return self;
