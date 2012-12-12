@@ -7,3 +7,4 @@
 //BOTAlertViews
 #import "BOTIndeterminateAlertView.h"
 #import "BOTBlockAlertView.h"
+#import "BOTProgressAlertView.h"

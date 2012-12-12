@@ -44,9 +44,49 @@ BOTBlockAlertView *alertView = [[BOTBlockAlertView alloc]
 }];
 ```
 
+###BOTProgressAlertView
+
+Use this AlertView to add a progressview to your alert view and diplay progress of an operation. Alternatively you can add a cancel button which execute a block.
+
+``` objective-c
+//create alert view with cancel button
+BOTProgressAlertView *pav = [[BOTProgressAlertView alloc] 
+                                    initWithTitle:@"Downloading" 
+                                          message:@"Some Stuff" 
+                                cancelButtonTitle:@"Cancel"];
+
+//show view and add block for cancelling
+[pav showWithCancelBlock:^{
+    NSLog(@"Cancelled.");
+}];
+
+//some timer later add progress information
+pav.progress = 0.33;
+
+//when all is done dismiss
+[pav dismiss];
+```
+
+``` objective-c
+//create alert view without cancel button
+BOTProgressAlertView *pav = [[BOTProgressAlertView alloc] 
+                                    initWithTitle:@"Downloading" 
+                                          message:@"Some Stuff" 
+                                cancelButtonTitle:nil];
+
+//show alertview
+[pav show];
+
+//some timer later add progress information
+pav.progress = 0.33;
+
+//when all is done dismiss
+[pav dismiss];
+```
+
 ##Collaboration
 
-I'm open to collaboration on this toolkit. If you want to submit code feel free to send me a pull request.
+I'm open to collaboration on this toolkit. If you want to submit code feel free to send me a pull request or open a ticket.
 
 ##License
 
