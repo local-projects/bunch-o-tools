@@ -16,7 +16,10 @@ Use this AlertView to lock the screen while your app is doing work that the user
 
 ``` objective-c
 //init and show
-BOTIndeterminateAlertView *alertView = [[BOTIndeterminateAlertView alloc] initWithTitle:@"Title" message:@"Please stand by!"];
+BOTIndeterminateAlertView *alertView = 
+    [[BOTIndeterminateAlertView alloc] 
+        initWithTitle:@"Title" 
+              message:@"Please stand by!"];
 [alertView show];
     
 //some time later
@@ -31,9 +34,9 @@ Use this AlertView to route the result of the tapped button into a block rather 
 //init
 BOTBlockAlertView *alertView = [[BOTBlockAlertView alloc]
                                 initWithTitle:@"Title"
-                                message:@"Message"
-                                cancelButtonTitle:@"Cancel"
-                                otherButtonTitles:@"Other", nil];
+                                      message:@"Message"
+                            cancelButtonTitle:@"Cancel"
+                            otherButtonTitles:@"Other", nil];
 
 //show and set results block
 [alertView showWithResultBlock:^(int buttonIndex) {
