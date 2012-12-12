@@ -5,7 +5,15 @@ Set of tools for everyday iOS usage.
 
 ##Installation
 
-To install, clone repository and add any of the files you need to your project from the src folder. Every class or category has its own document in the docs folder.
+To install, clone repository and add any of the files you need to your project from the src folder. You can add the `Bunch-o-Tools.h` to any class to have all toolkit functions available.
+
+This framework requires ARC.
+
+##Documentation
+
+###BOTIndeterminateAlertView
+
+Use this AlertView to lock the screen while your app is doing work that the user has to wait for. You will have to keep a reference to the current AlertView to be able to dismiss it after your app has done the work.
 
 ##License
 
