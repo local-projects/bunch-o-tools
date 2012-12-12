@@ -1,7 +1,6 @@
 #Bunch o' Tools - Toolkit for iOS
 
-
-Set of tools for everyday iOS usage. 
+Set of tools for everyday iOS usage. At the moment of writing this toolset is new and in an alpha stadium. For the time being there are no "stable releases" and a lot may change. 
 
 ##Installation
 
@@ -14,6 +13,26 @@ This framework requires ARC.
 ###BOTIndeterminateAlertView
 
 Use this AlertView to lock the screen while your app is doing work that the user has to wait for. You will have to keep a reference to the current AlertView to be able to dismiss it after your app has done the work.
+
+###BOTBlockAlertView
+
+Use this AlertView to route the result of the tapped button into a block rather than having to set up a delegate.
+
+``` objective-c
+    BOTBlockAlertView *alertView = [[BOTBlockAlertView alloc]
+                                    initWithTitle:@"Title"
+                                    message:@"Message"
+                                    cancelButtonTitle:@"Cancel"
+                                    otherButtonTitles:@"Other", nil];
+    
+    [alertView showWithResultBlock:^(int buttonIndex) {
+        NSLog(@"%i", buttonIndex);
+    }];
+```
+
+##Collaboration
+
+I'm open to collaboration on this toolkit. If you want to submit code feel free to send me a pull request.
 
 ##License
 

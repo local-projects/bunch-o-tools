@@ -1,6 +1,9 @@
+//
+//
+// Use this file to import all files of the framework.
+//
+//
 
-/**
-
- Use this file to import all files of the framework.
- 
-*/
+//BOTAlertViews
+#import "BOTIndeterminateAlertView.h"
+#import "BOTBlockAlertView.h"
