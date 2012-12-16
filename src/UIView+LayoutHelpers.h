@@ -21,5 +21,8 @@
 //move
 - (void) move:(CGPoint) offset;
 
+//state
+- (BOOL) isPortrait;
+
 
 @end

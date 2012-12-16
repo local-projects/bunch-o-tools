@@ -87,5 +87,11 @@
     self.frame = newFrame;
 }
 
+#pragma mark - is portrait
+
+-(BOOL)isPortrait
+{
+    return self.bounds.size.height > self.bounds.size.width;
+}
 
 @end
