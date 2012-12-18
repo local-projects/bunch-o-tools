@@ -87,6 +87,22 @@
     self.frame = newFrame;
 }
 
+#pragma mark - set size
+
+- (void) setHeight:(float) height
+{
+    CGRect newFrame = self.frame;
+    newFrame.size.height = height;
+    self.frame = newFrame;
+}
+
+- (void) setWidth:(float) width
+{
+    CGRect newFrame = self.frame;
+    newFrame.size.width = width;
+    self.frame = newFrame;
+}
+
 #pragma mark - is portrait
 
 -(BOOL)isPortrait

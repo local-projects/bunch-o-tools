@@ -21,6 +21,10 @@
 //move
 - (void) move:(CGPoint) offset;
 
+//setsize
+- (void) setHeight:(float) height;
+- (void) setWidth:(float) width;
+
 //state
 - (BOOL) isPortrait;
 
