@@ -84,6 +84,41 @@ pav.progress = 0.33;
 [pav dismiss];
 ```
 
+###BOTBlockActionSheet
+
+Use this ActionSheet to route the result in to a block without having to use a delegate
+
+``` objective-c
+    BOTBlockActionSheet *actionSheet =
+    [[BOTBlockActionSheet alloc] initWithTitle:@"Share"
+                             cancelButtonTitle:@"Cancel"
+                        destructiveButtonTitle:nil
+                             otherButtonTitles:nil];
+    
+    int mailButton = [actionSheet addButtonWithTitle:@"Mail"];
+    int twitterButton = [actionSheet addButtonWithTitle:@"Twitter"];
+    int facebookButton =[actionSheet addButtonWithTitle:@"Facebook"];
+
+    [actionSheet showInView:self.parentViewController.view];
+    
+    actionSheet.resultBlock = ^(int result) {
+        if ( result == mailButton ) {
+            [self shareViaMail];
+        }
+        if ( result == twitterButton ) {
+            [self shareOnTwitter];
+        }
+        if ( result == facebookButton ) {
+            [self shareOnFacebook];
+        }
+    };
+```
+
+###UIView+LayoutHelpers
+
+Use this category to manage layouting of your views. This is probably only helpful if you decide to layout views in code.
+
+
 ##Collaboration
 
 I'm open to collaboration on this toolkit. If you want to submit code feel free to send me a pull request or open a ticket.

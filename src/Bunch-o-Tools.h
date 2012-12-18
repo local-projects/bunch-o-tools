@@ -9,5 +9,8 @@
 #import "BOTBlockAlertView.h"
 #import "BOTProgressAlertView.h"
 
+//BOTActionSheets
+#import "BOTBlockActionSheet.h"
+
 //UIView Categories
 #import "UIView+LayoutHelpers.h"
