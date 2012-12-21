@@ -87,6 +87,51 @@
     self.frame = newFrame;
 }
 
+-(void)setX:(CGFloat)offset
+{
+    CGRect newFrame = self.frame;
+    newFrame.origin.x = offset;
+    self.frame = newFrame;
+}
+
+-(void)setY:(CGFloat)offset
+{
+    CGRect newFrame = self.frame;
+    newFrame.origin.y = offset;
+    self.frame = newFrame;
+}
+
+#pragma mark - position
+
+//position
+- (void) moveToLeftOf:(UIView *) view
+{
+    CGRect newFrame = self.frame;
+    newFrame.origin.x = view.frame.origin.x - self.frame.size.width;
+    self.frame = newFrame;
+}
+
+- (void) moveToRightOf:(UIView *) view
+{
+    CGRect newFrame = self.frame;
+    newFrame.origin.x = view.frame.origin.x + view.frame.size.width;
+    self.frame = newFrame;
+}
+
+- (void) moveBelow:(UIView *) view
+{
+    CGRect newFrame = self.frame;
+    newFrame.origin.y = view.frame.origin.y + view.frame.size.height;
+    self.frame = newFrame;
+}
+
+- (void) moveOver:(UIView *) view
+{
+    CGRect newFrame = self.frame;
+    newFrame.origin.y = view.frame.origin.y - self.frame.size.height;
+    self.frame = newFrame;
+}
+
 #pragma mark - set size
 
 - (void) setHeight:(float) height
@@ -100,6 +145,13 @@
 {
     CGRect newFrame = self.frame;
     newFrame.size.width = width;
+    self.frame = newFrame;
+}
+
+-(void)setSize:(CGSize)size
+{
+    CGRect newFrame = self.frame;
+    newFrame.size = size;
     self.frame = newFrame;
 }
 

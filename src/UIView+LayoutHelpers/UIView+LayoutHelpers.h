@@ -20,10 +20,19 @@
 
 //move
 - (void) move:(CGPoint) offset;
+- (void) setX:(CGFloat) offset;
+- (void) setY:(CGFloat) offset;
+
+//position
+- (void) moveToLeftOf:(UIView *) view;
+- (void) moveToRightOf:(UIView *) view;
+- (void) moveBelow:(UIView *) view;
+- (void) moveOver:(UIView *) view;
 
 //setsize
-- (void) setHeight:(float) height;
-- (void) setWidth:(float) width;
+- (void) setHeight:(CGFloat) height;
+- (void) setWidth:(CGFloat) width;
+- (void) setSize:(CGSize) size;
 
 //state
 - (BOOL) isPortrait;
