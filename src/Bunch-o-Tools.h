@@ -14,3 +14,6 @@
 
 //UIView Categories
 #import "UIView+LayoutHelpers.h"
+
+//NSURL Categories
+#import "NSURL+Directories.h"
