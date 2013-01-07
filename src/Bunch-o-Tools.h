@@ -17,3 +17,6 @@
 
 //NSURL Categories
 #import "NSURL+Directories.h"
+
+//UIImageView Categories
+#import "UIImageView+Factory.h"
