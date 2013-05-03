@@ -9,8 +9,8 @@
 
 //center view in parent view
 - (void) centerInParent;
-- (void) horizontallyCenterInParent;
-- (void) verticallyCenterInParent;
+- (void) centerInParentHorizontally;
+- (void) centerInParentVertically;
 
 //align
 - (void) alignInParentRight;
@@ -20,6 +20,7 @@
 
 //move
 - (void) move:(CGPoint) offset;
+- (void) setOrigin:(CGPoint) origin;
 - (void) setX:(CGFloat) offset;
 - (void) setY:(CGFloat) offset;
 

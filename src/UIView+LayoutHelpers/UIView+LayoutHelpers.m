@@ -11,11 +11,11 @@
 
 -(void)centerInParent
 {
-    [self horizontallyCenterInParent];
-    [self verticallyCenterInParent];
+    [self centerInParentVertically];
+    [self centerInParentHorizontally];
 }
 
--(void)horizontallyCenterInParent
+-(void)centerInParentHorizontally
 {
     if ( self.superview == nil )
         return;
@@ -27,7 +27,7 @@
     self.frame = newFrame;
 }
 
--(void)verticallyCenterInParent
+-(void)centerInParentVertically
 {
     if ( self.superview == nil )
         return;
@@ -84,6 +84,13 @@
     CGRect newFrame = self.frame;
     newFrame.origin.x += offset.x;
     newFrame.origin.y += offset.y;
+    self.frame = newFrame;
+}
+
+-(void)setOrigin:(CGPoint)origin
+{
+    CGRect newFrame = self.frame;
+    newFrame.origin = origin;
     self.frame = newFrame;
 }
 
