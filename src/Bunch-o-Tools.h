@@ -22,3 +22,4 @@
 #import "UIImageView+BOTFactories.h"
 
 //UIColor Categories
+#import "UIColor+BOTFactories.h"
