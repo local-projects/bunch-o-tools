@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Local Projects. All rights reserved.
 //
 
-#import "NSURL+Directories.h"
+#import "NSURL+BOTDirectories.h"
 
-@implementation NSURL(Directories)
+@implementation NSURL(BOTDirectories)
 
 + (NSURL *) documentsDirectory {
     NSURL *docUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];

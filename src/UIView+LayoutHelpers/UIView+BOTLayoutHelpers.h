@@ -4,7 +4,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView(LayoutHelpers)
+@interface UIView(BOTLayoutHelpers)
 
 
 //center view in parent view

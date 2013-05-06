@@ -3,9 +3,9 @@
 //  
 
 
-#import "UIView+LayoutHelpers.h"
+#import "UIView+BOTLayoutHelpers.h"
 
-@implementation UIView(LayoutHelpers)
+@implementation UIView(BOTLayoutHelpers)
 
 #pragma mark - center in parent view
 

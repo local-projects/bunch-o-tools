@@ -13,10 +13,12 @@
 #import "BOTBlockActionSheet.h"
 
 //UIView Categories
-#import "UIView+LayoutHelpers.h"
+#import "UIView+BOTLayoutHelpers.h"
 
 //NSURL Categories
-#import "NSURL+Directories.h"
+#import "NSURL+BOTDirectories.h"
 
 //UIImageView Categories
-#import "UIImageView+Factory.h"
+#import "UIImageView+BOTFactories.h"
+
+//UIColor Categories

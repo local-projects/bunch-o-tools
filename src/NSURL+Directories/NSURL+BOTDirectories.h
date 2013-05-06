@@ -4,8 +4,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSURL(Directories)
+@interface NSURL(BOTDirectories)
 
 + (NSURL *) documentsDirectory;
 
 @end
+

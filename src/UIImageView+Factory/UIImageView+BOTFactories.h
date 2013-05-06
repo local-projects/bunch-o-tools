@@ -4,7 +4,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImageView(Factory)
+@interface UIImageView(BOTFactories)
 
 + (UIImageView *) imageViewWithImageNamed:(NSString *)imageName;
 

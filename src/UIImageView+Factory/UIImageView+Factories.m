@@ -2,9 +2,9 @@
 //  UIImageView+Factory.m
 // 
 
-#import "UIImageView+Factory.h"
+#import "UIImageView+BOTFactories.h"
 
-@implementation UIImageView(Factory)
+@implementation UIImageView(BOTFactories)
 
 + (UIImageView *) imageViewWithImageNamed:(NSString *)imageName
 {
