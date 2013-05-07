@@ -23,3 +23,6 @@
 
 //UIColor Categories
 #import "UIColor+BOTFactories.h"
+
+//UIFont Categories
+#import "UIFont+BOTHelpers.h"
