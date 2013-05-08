@@ -26,3 +26,6 @@
 
 //UIFont Categories
 #import "UIFont+BOTHelpers.h"
+
+//UIImage Categories
+#import "UIImage+BOTManipulation.h"
