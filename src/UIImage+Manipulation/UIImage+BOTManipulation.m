@@ -60,6 +60,8 @@
     UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
+    
+    scaledImage = [UIImage imageWithCGImage:scaledImage.CGImage scale:1.0 orientation:self.imageOrientation];
     return scaledImage;
 }
 
@@ -106,6 +108,7 @@
     UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
+    scaledImage = [UIImage imageWithCGImage:scaledImage.CGImage scale:1.0 orientation:self.imageOrientation];
     return scaledImage;
 }
 
