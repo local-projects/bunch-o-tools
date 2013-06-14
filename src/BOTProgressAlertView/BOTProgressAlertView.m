@@ -31,9 +31,7 @@
         if ( cancelButtonTitle ) {
             
             self.hasCancelButton = YES;
-            
-            //we have to insert 2 newlines to the message so that there is room for the progressview
-            self.message = [self.message stringByAppendingString:@"\n\n"];
+            self.message = self.message;
         }
         
         //setup progress view
@@ -42,6 +40,15 @@
     }
     
     return self;
+}
+
+-(void)setMessage:(NSString *)message
+{
+    if ( self.hasCancelButton )
+        //we have to insert 2 newlines to the message so that there is room for the progressview
+        super.message = [message stringByAppendingString:@"\n\n"];
+    else
+        super.message = message;
 }
 
 - (void) showWithCancelBlock:(void (^)())cancelBlock

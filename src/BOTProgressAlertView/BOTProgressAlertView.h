@@ -21,7 +21,6 @@
 //dismiss this BOTProgressAlertView
 - (void) dismiss;
 
-
 //the block that will be called when the cancel button is clicked
 @property (copy) void (^cancelBlock) ();
 
