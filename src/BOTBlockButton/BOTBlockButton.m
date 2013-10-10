@@ -17,6 +17,13 @@
     return self;
 }
 
+-(id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    [self registerEvents];
+    return self;
+}
+
 - (void) registerEvents
 {
     [self addTarget:self

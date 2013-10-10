@@ -4,6 +4,8 @@
 //
 //
 
+#import "BOTBlockButton.h"
+
 //BOTAlertViews
 #import "BOTIndeterminateAlertView.h"
 #import "BOTBlockAlertView.h"
