@@ -141,14 +141,14 @@
 
 #pragma mark - set size
 
-- (void) setHeight:(float) height
+- (void) setHeight:(CGFloat) height
 {
     CGRect newFrame = self.frame;
     newFrame.size.height = height;
     self.frame = newFrame;
 }
 
-- (void) setWidth:(float) width
+- (void) setWidth:(CGFloat) width
 {
     CGRect newFrame = self.frame;
     newFrame.size.width = width;

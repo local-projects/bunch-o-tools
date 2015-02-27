@@ -41,7 +41,7 @@
     
     //call the resultl block with our button index
     if ( self.resultBlock != nil )
-        self.resultBlock(buttonIndex);
+        self.resultBlock((int)buttonIndex);
 }
 
 @end
