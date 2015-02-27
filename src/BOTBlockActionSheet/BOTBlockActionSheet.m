@@ -28,7 +28,7 @@
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if ( self.resultBlock && buttonIndex >= 0 ) {
-        self.resultBlock(buttonIndex);
+        self.resultBlock((int)buttonIndex);
     }
 }
 
